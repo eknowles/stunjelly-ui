@@ -1,5 +1,6 @@
 {
   "name": "stunjelly.core",
+  "description": "UI for Stunjelly",
   "version": "1.0.0",
   "scripts": {
     "test": "jest",
