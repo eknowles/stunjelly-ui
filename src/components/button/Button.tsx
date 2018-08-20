@@ -1,10 +1,11 @@
+import { MouseEventHandler } from 'react';
 import * as React from 'react';
 //@ts-ignore
 import * as styles from './Button.pcss';
 
 export interface IButtonProps {
-  children?: any;
-  onClick: (event) => {},
+  children: string;
+  onClick(event: MouseEventHandler<HTMLButtonElement>): void;
 }
 
 export default class Button extends React.PureComponent<IButtonProps, {}> {
@@ -12,7 +13,7 @@ export default class Button extends React.PureComponent<IButtonProps, {}> {
     return (
       <button
         className={styles.button}
-        onClick={this.props.onClick}
+        onClick={this.props.onClick.bind(this)}
         type="button"
       >
         {this.props.children}

@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
-import Layout from './Layout';
+import Button from './Button';
 
-storiesOf('Components/Layout', module)
-  .add('Default', () => <Layout />);
+storiesOf('Components/Button', module)
+  .add('Default', () => <Button onClick={() => {}}>Default Button</Button>);
