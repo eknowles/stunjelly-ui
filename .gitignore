@@ -1,4 +1,12 @@
-/node_modules/
-/.bit/
-/dist/
+# nodejs
+node_modules/
+
+# yarn
 *.log
+
+# parceljs
+.cache
+dist/
+
+# bitsrc.io
+.bit/
