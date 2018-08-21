@@ -7,7 +7,7 @@ export interface ILayoutProps {
 }
 
 export default class Root extends React.PureComponent<ILayoutProps, {}> {
-  render() {
+  render(): JSX.Element {
     return (
       <div className={styles.root}>{this.props.children}</div>
     )

@@ -1,17 +1,16 @@
-// const genDefaultConfig = require('@storybook/core/dist/server/config/defaults/webpack.config.js');
+const s = require('@storybook/core/server.js');
 const path = require('path');
 const nanoConfig = require('../cssnano.config');
 
-// load the default config generator.
-module.exports = (baseConfig, env, defaultConfig) => {
-  const config = defaultConfig;
-  // const config = genDefaultConfig.createDefaultWebpackConfig(baseConfig, env);
+module.exports = (baseConfig) => {
 
-  // Extend it as you need.
+  const config = s.createDefaultWebpackConfig(baseConfig);
+
   config.module.rules.push({
     test: /\.(ts|tsx)$/,
     loader: require.resolve('awesome-typescript-loader')
   });
+
   config.resolve.extensions.push('.ts', '.tsx');
 
   config.module.rules.push({
@@ -40,3 +39,4 @@ module.exports = (baseConfig, env, defaultConfig) => {
 
   return config;
 };
+

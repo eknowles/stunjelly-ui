@@ -23,7 +23,7 @@ export default class Button extends React.PureComponent<IButtonProps, {}> {
     [Size.Jumbo]: styles.sizeJumbo,
   };
 
-  render() {
+  render(): JSX.Element {
     return (
       <button
         className={cx(styles.button, Button.sizeClass[this.props.size])}

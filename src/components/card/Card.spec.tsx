@@ -4,15 +4,14 @@ import Adapter from 'enzyme-adapter-react-16';
 
 configure({adapter: new Adapter()});
 
-import Button from './Button';
+import Card from './Card';
 
-describe('Button', () => {
+describe('Card', () => {
   let wrapper;
   let props;
 
   it('should render a div', () => {
-    props = {onClick: jest.fn()};
-    wrapper = shallow(<Button {...props} />);
-    expect(wrapper.find('button').props().type).toBe('button');
+    wrapper = shallow(<Card {...props} />);
+    expect(wrapper).toBeDefined();
   });
 });

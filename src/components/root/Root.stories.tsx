@@ -6,5 +6,5 @@ import { linkTo } from '@storybook/addon-links';
 
 import Root from './Root';
 
-storiesOf('Components/Root', module)
+storiesOf('Core|Components/Root', module)
   .add('Default', () => <Root/>);

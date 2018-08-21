@@ -10,3 +10,6 @@ dist/
 
 # bitsrc.io
 .bit/
+
+# storybook
+storybook-static/

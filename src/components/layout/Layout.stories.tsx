@@ -6,5 +6,5 @@ import { linkTo } from '@storybook/addon-links';
 
 import Layout from './Layout';
 
-storiesOf('Components/Layout', module)
+storiesOf('Core|Components/Layout', module)
   .add('Default', () => <Layout />);

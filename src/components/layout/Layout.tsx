@@ -5,7 +5,7 @@ export interface ILayoutProps {
 }
 
 export default class Layout extends React.Component<ILayoutProps, {}> {
-  render() {
+  render(): JSX.Element {
     return (
       <div>{this.props.children}</div>
     )

@@ -3,7 +3,14 @@
     "allowJs": true,
     "jsx": "react",
     "rootDir": "./",
+    "target": "es5",
     "outDir": "./lib",
-    "allowSyntheticDefaultImports": false,
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
   }
 }

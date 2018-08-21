@@ -6,8 +6,8 @@ import { linkTo } from '@storybook/addon-links';
 
 import Button, { Size } from './Button';
 
-storiesOf('Kitchen Sink', module)
-  .add('Buttons', () => {
+storiesOf('Kitchen Sink|Buttons', module)
+  .add('Default', () => {
     const sizes = [Size.Small, Size.Medium, Size.Large, Size.Jumbo];
     return (
       <div>
@@ -21,7 +21,7 @@ storiesOf('Kitchen Sink', module)
   })
 ;
 
-storiesOf('Components/Button', module)
+storiesOf('Core|Components/Button', module)
   .add('Small', () => <Button size={Size.Small} onClick={() => {}}>Small Button</Button>)
   .add('Medium', () => <Button size={Size.Medium} onClick={() => {}}>Medium Button</Button>)
   .add('Large', () => <Button size={Size.Large} onClick={() => {}}>Large Button</Button>)
